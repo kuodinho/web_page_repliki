@@ -1,0 +1,239 @@
+.item1 {
+  grid-area: header;
+}
+.item2 {
+  grid-area: menu;
+}
+.item3 {
+  grid-area: main;
+  min-height: 300px;
+}
+
+.item5 {
+  grid-area: footer;
+}
+
+.fotostart {
+  float: left;
+  margin-right: 30px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "header header header header header header"
+    "menu main main main main main"
+    "footer footer footer footer footer footer";
+}
+body {
+  margin: 0;
+}
+
+.grid-container > div {
+  background-color: whitesmoke;
+  text-align: center;
+  padding: 10px 0;
+}
+h1.logo {
+  font-size: 44px;
+  font-weight: 700;
+  color: rgb(54, 47, 47);
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  margin-top: 50px;
+  margin-bottom: 40px;
+  font-family: "Open Sans";
+}
+nav {
+  background-color: whitesmoke;
+  text-align: center;
+  color: black;
+  font-family: "Open Sans";
+}
+.menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 10px;
+  font-size: 18px;
+  height: 38px;
+  line-height: 200%;
+  font-family: "Open Sans";
+}
+.menu > li {
+  display: inline-block;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-right: 2px dashed lightgrey;
+}
+.menu > li:first-child {
+  border-left: 2px dashed lightgrey;
+}
+.menu a {
+  color: #2e2e2e;
+  text-decoration: none;
+}
+.menu a:hover {
+  color: #0a2b42;
+}
+.lista {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  font-family: "Open Sans";
+  width: 240px;
+}
+#but {
+  width: 15em;
+  align-items: center;
+  background-color: whitesmoke;
+  margin: 10px;
+  color: rgb(20, 19, 19);
+  padding: 15px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  border-radius: 12px;
+  font-family: "Open Sans";
+}
+.opis {
+  font-size: 16px;
+  font-weight: 400;
+  color: rgb(54, 47, 47);
+  text-align: left;
+  font-family: "Open Sans";
+}
+
+.productItem {
+  /* color: rgb(14, 17, 15); */
+  border: 5px solid black;
+  border-radius: 5px;
+  border-width: 3px;
+  margin: 4em;
+  /* display: inline; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.title {
+  /* text-align: center; */
+  font-size: 16px;
+  font-weight: 700;
+  font-family: Verdana;
+  word-wrap: break-word;
+  max-width: 20em;
+}
+.contact {
+  text-align: center;
+  font-size: 10px;
+  font-family: "Open Sans";
+  background-color: whitesmoke;
+}
+.info {
+  text-align: center;
+  font-size: 10px;
+  font-family: "Open Sans";
+  background-color: whitesmoke;
+}
+
+#productsList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.thumbnail {
+  width: 16em;
+  height: 16em;
+  object-fit: contain;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.smaller {
+  width: 6em;
+  height: 6em;
+  object-fit: contain;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.small {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+.kolory {
+  font-size: 16px;
+  font-weight: 400;
+  color: rgb(54, 47, 47);
+  text-align: left;
+  font-family: "Open Sans";
+}
+.smaller:hover,
+.thumbnail:hover {
+  opacity: 0.3;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+/* Add Animation - Zoom in the Modal */
+.modal-content,
+#caption {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #7a7373;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: rgb(22, 21, 21);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px) {
+  .modal-content {
+    width: 100%;
+  }
+}

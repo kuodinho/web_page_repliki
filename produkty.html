@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="utf-8" />
+    <title>Pracownia Rymarska Marek Kłoda</title>
+    <meta
+      name="description"
+      content="Sklep z replikami skórzanych elementów wyposażenia żołnierzy z okresu I i II wojny światowej"
+    />
+    <meta
+      name="keywords"
+      content="repliki, skórzane, kabura, żabki, pasy, II wojna światowa"
+    />
+    <meta name="author" content="P.K.&D.S." />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-Ua-Compatible" content="IE=edge,chrome=1" />
+
+    <link rel="stylesheet" href="main.css" />
+    <!-- <link rel="stylesheet" href="css/fontello.css"> -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=latin-ext"
+      rel="stylesheet"
+    />
+
+    <script src="script2502.js" async></script>
+  </head>
+  <body>
+    <div class="grid-container">
+      <div class="item1">
+        <h1 class="logo">Pracownia Rymarska Marek Kłoda</h1>
+
+        <nav>
+          <ul class="menu">
+            <li><a href="index.html">Strona główna</a></li>
+            <li><a href="produkty.html">Produkty</a></li>
+            <li><a href="zamowienia.html">Zamówienia</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="item2">
+        <div class="lista">
+          <button id="but" onclick="showProducts('zabki')">Żabki</button>
+          <button id="but" onclick="showProducts('poland')">
+            Polska (1918-1939)
+          </button>
+          <button id="but" onclick="showProducts('germany')">
+            Niemcy (1914-1945)
+          </button>
+          <button id="but" onclick="showProducts('russia')">
+            Rosja (1914-1917)
+          </button>
+          <button id="but" onclick="showProducts('france')">
+            Francja (1914-1918)
+          </button>
+          <button id="but" onclick="showProducts('austroHungary')">
+            Austro-Węgry (1914-1918)
+          </button>
+        </div>
+      </div>
+      <div class="item3" id="productsList">
+        <div class="kolory">
+          <h2>Kolory wyrobów</h2>
+          <p>Repliki wykonywane są w czterech podstawowych kolorach:</p>
+          <img src="img/colors/1/1a.jpg" width="150px" height="150px" />
+          <img src="img/colors/1/2a.jpg" width="150px" height="150px" />
+          <p>
+            <img src="img/colors/1/3a.jpg" width="150px" height="150px" />
+            <img src="img/colors/1/4a.jpg" width="150px" height="150px" />
+          </p>
+          <p>1 - naturalny; 2 - jasny brąz;</p>
+          <p>3 - ciemny brąz; 4 - czarny;</p>
+          <p>
+            Ze względu na indywidualne cechy skóry, odcienie mogą różnić się
+            nieznacznie od przedstawionych powyżej.
+          </p>
+          <p>
+            Poszczególne repliki mogą być wykonane w dowolnie wybranym kolorze.
+          </p>
+        </div>
+      </div>
+      <!-- The Modal -->
+      <div id="myModal" class="modal">
+        <!-- The Close Button -->
+        <span class="close">&times;</span>
+
+        <!-- Modal Content (The Image) -->
+        <img class="modal-content" id="img01" />
+      </div>
+      <div class="item4"></div>
+      <div class="item5">
+        <div class="contact">
+          tel. 505 826 339, e - mail: repliki@poczta.onet.pl
+        </div>
+        <div style="clear: both"></div>
+        <div class="info">Copyrights 2022 Pracownia Rymarska Marek Kłoda</div>
+      </div>
+    </div>
+  </body>
+</html>
